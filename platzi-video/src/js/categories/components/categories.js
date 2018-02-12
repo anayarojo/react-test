@@ -1,12 +1,19 @@
 import React from "react"
 import Category from "./category"
+import "../../../css/categories/components/categories.css"
 
 function Categories(props) {
     return (
-        <div>
+        <div className="categories">
             {
                 props.categories.map((item) => {
-                    return <Category key={item.id} {...item} />
+                    return (
+                        <Category 
+                            key={item.id} 
+                            {...item} 
+                            handleOpenModalClick={props.handleOpenModalClick}
+                        />
+                    )
                 })
             }
         </div>

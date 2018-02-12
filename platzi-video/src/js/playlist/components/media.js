@@ -3,14 +3,9 @@ import PropTypes from "prop-types";
 import "../../../css/playlist/components/media.css";
 
 class Media extends PureComponent {
-
-    handleClick = (event) => {
-        console.log(this.props.title)
-    }
-    
     render() {
         return (
-            <div className="media" onClick={this.handleClick}>
+            <div className="media" onClick={this.props.handleClick}>
                 <div className="media-cover">
                     <img className="media-image"
                         src={this.props.cover}
