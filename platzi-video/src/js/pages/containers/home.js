@@ -8,7 +8,7 @@ import HandleError from "../../errors/containers/handle-error"
 
 class Home extends Component {
     state = {
-        modalVisible: true,
+        modalVisible: false,
     }
     handleOpenModalClick = (event) => {
         this.setState({
@@ -27,7 +27,7 @@ class Home extends Component {
                     <HomeLayout>
                         <Related />
                         <Categories 
-                            categories={this.props.data}
+                            categories={this.props.data.categories}
                             handleOpenModalClick={this.handleOpenModalClick}
                         />
                         {
