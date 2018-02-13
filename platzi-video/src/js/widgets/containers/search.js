@@ -22,7 +22,7 @@ class SearchContainer extends Component {
             <Search
                 setRef={this.setIntputRef}
                 handleSubmit={this.handleSubmit}
-                handleChenge={this.handleChange}
+                handleChange={this.handleInputChange}
                 value={this.state.value}
             />
         )

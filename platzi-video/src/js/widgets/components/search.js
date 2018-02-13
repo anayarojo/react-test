@@ -11,8 +11,8 @@ const Search = (props) => (
             name="search"
             className="search-input"
             placeholder="Busca tu video favorito"
-            onChange={props.handleChange}
             ref={props.setRef}
+            onChange={props.handleChange}
             value={props.value}
         />
     </form>    
