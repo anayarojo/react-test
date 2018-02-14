@@ -3,7 +3,7 @@ import "../../../css/player/components/title.css"
 
 const Title = (props) =>{
     return(
-        <div className="Title">
+        <div className="title">
             <h2>
                 {props.title}
             </h2>
